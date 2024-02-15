@@ -23,7 +23,6 @@ app.get('/', async (req, res) => {
       console.log(error);
     }
   });
-  
 
 app.listen(PORT, async() => {
     try {
@@ -32,5 +31,5 @@ app.listen(PORT, async() => {
     } catch (error) {
         console.log("Failed to connect to DB")
     }
-    console.log(`Server running @ ${PORT}`);
+    console.log(`Server running ${PORT}`);
 });
