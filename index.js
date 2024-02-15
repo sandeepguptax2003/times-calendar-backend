@@ -16,6 +16,15 @@ app.use(cors())
 app.use("/users",userRouter)
 app.use("/events",eventRouter)
 
+app.get('/', async (req, res) => {
+    try {
+      res.json('Welcome to the Times-Calendar');
+    } catch (error) {
+      console.log(error);
+    }
+  });
+  
+
 app.listen(PORT, async() => {
     try {
         await connection
